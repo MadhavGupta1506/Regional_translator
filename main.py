@@ -6,4 +6,8 @@ language1=st.sidebar.selectbox("Select language to translate from",languages,)
 sentence=st.text_input("Type here")
 language2=st.sidebar.selectbox("Select language to translate",languages)
 # print(sentence)
-st.write(lang.get_response(sentence,language1,language2))
+if(sentence and language1 and language2):
+    
+    now=st.write(lang.get_response(sentence,language1,language2))
+else:
+    now=st.write("Hello! how can I help?")
