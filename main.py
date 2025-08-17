@@ -1,6 +1,6 @@
 import streamlit as st
 import lang
-st.title("Welcome to langauage translator")
+st.title("Welcome to language translator")
 languages="""English,Hindi,Bengali,Telugu,Marathi,Tamil,Urdu,Gujarati,Kannada,Odia,Punjabi,Malayalam,Assamese,Konkani,Kashmiri,Manipuri (Meitei)""".split(",")
 language1=st.sidebar.selectbox("Select language to translate from",languages,)
 sentence=st.text_input("Type here")
